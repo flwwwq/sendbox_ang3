@@ -1,0 +1,17 @@
+languge: node_js
+node_js:
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+brances:
+  only:
+  - master
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "314ee4e0-cb93-4afc-8d3b-9894e8cbb98e"
+  app: sendboxang2
